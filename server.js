@@ -6,20 +6,14 @@ const cron = require("node-cron");
 
 const main = require("./utils/mainTasks");
 const app = express();
-const options = {
-  origin: "*",
-  methods: ["POST", "GET", "PATCH", "DELETE", "PUT"],
-  allowedHeaders: ["content-type", "Authorization"],
-  credentials: true,
-};
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors(options));
+app.use(cors());
 
 //Routes
-app.use("/api/v1/user", require("./routes/userRoute"));
-app.use("/api/v1/customer", require("./routes/customerRoute"));
+app.use("/api/v1/user", cors(), require("./routes/userRoute"));
+app.use("/api/v1/customer", cors(), require("./routes/customerRoute"));
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
