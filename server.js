@@ -6,7 +6,7 @@ const cron = require("node-cron");
 
 const main = require("./utils/mainTasks");
 const app = express();
-app.use(cors({ origin: "https://sftpmanager.onrender.com" }));
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
