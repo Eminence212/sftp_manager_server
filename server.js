@@ -11,10 +11,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: [
-      "https://sftpmanager.onrender.com/",
-      "https://sftpmanager.onrender.com",
-    ],
+    origin: "https://sftpmanager.onrender.com",
   })
 );
 //Routes
