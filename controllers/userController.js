@@ -84,7 +84,6 @@ const userController = {
   login: async (req, res) => {
     try {
       const { name, password } = req.body;
-      console.log({ name, password });
       const user = await User.findOne({
         where: {
           [Op.or]: [{ name: name.toLowerCase() }, { name: name.toUpperCase() }],
