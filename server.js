@@ -6,12 +6,14 @@ const cron = require("node-cron");
 
 const main = require("./utils/mainTasks");
 const app = express();
+
 app.use(
   cors({
     origin: "*",
     credentials: true,
   })
 );
+
 
 app.use(express.json());
 app.use(cookieParser());
