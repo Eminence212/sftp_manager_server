@@ -144,6 +144,11 @@ bluebird@^3.7.2:
   resolved "https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
+bluebird@~2.9.24:
+  version "2.9.34"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-2.9.34.tgz#2f7b4ec80216328a9fddebdf69c8d4942feff7d8"
+  integrity sha512-ZDzCb87X7/IP1uzQ5eJZB+WoQRGTnKL5DHWvPw6kkMbQseouiQIrEi3P1UGE0D1k0N5/+aP/5GMCyHZ1xYJyHQ==
+
 body-parser@1.20.1:
   version "1.20.1"
   resolved "https://registry.npmjs.org/body-parser/-/body-parser-1.20.1.tgz"
@@ -411,6 +416,11 @@ depd@2.0.0:
   resolved "https://registry.npmjs.org/depd/-/depd-2.0.0.tgz"
   integrity sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==
 
+depd@^1.0.1:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
+  integrity sha512-7emPTl6Dpo6JRXOXjLRxck+FlLRX5847cLKEn00PLAgc3g2hTZZgr+e4c2v6QpSmLeFP3n5yUo7ft6avBK/5jQ==
+
 destroy@1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/destroy/-/destroy-1.2.0.tgz"
@@ -425,6 +435,11 @@ dotenv@^16.0.3:
   version "16.0.3"
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.0.3.tgz"
   integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
+
+dottie@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/dottie/-/dottie-0.3.1.tgz#4185f777489960ac084131de3f9a14a179bb749f"
+  integrity sha512-1l+bzal93xF7U1MUkF3DpZu8FiyHy4gg2vq3PjPqG8qY1k2e7ZJn7osJlBolfG2DaOmDt5UbkLnCo88zqsMo+g==
 
 dottie@^2.0.2:
   version "2.0.3"
@@ -660,6 +675,11 @@ generate-function@^2.3.1:
   dependencies:
     is-property "^1.0.2"
 
+generic-pool@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/generic-pool/-/generic-pool-2.2.0.tgz#8b465c1a7588ea9dd2bb133bda0bb66bfef8a63e"
+  integrity sha512-mPcLSdb8iADPF5Fy5M7AcFQ07QDxhAbz0KvzUIXVhJBYi8ELRHWXweJ8XTy6lyjh9b3nndSsTeOo3ElOOu2FsA==
+
 get-caller-file@^2.0.5:
   version "2.0.5"
   resolved "https://registry.npmjs.org/get-caller-file/-/get-caller-file-2.0.5.tgz"
@@ -769,7 +789,7 @@ ignore-by-default@^1.0.1:
   resolved "https://registry.npmjs.org/ignore-by-default/-/ignore-by-default-1.0.1.tgz"
   integrity sha512-Ius2VYcGNk7T90CppJqcIkS5ooHUZyIQK+ClZfMfMNFEF9VSE73Fq+906u/CWu92x4gzZMWOwfFYckPObzdEbA==
 
-inflection@^1.13.2:
+inflection@^1.13.2, inflection@^1.6.0:
   version "1.13.4"
   resolved "https://registry.npmjs.org/inflection/-/inflection-1.13.4.tgz"
   integrity sha512-6I/HUDeYFfuNCVS3td055BaXBwKYuzw7K3ExVMStBowKo9oOAMJIXIHvdyR3iboTCp1b+1i5DSkIZTcwIktuDw==
@@ -930,6 +950,11 @@ lodash.once@^4.0.0:
   resolved "https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz"
   integrity sha512-Sb487aTOCr9drQVL8pIxOzVhafOjZN9UU54hiN8PU3uAiSV7lx1yYNpbNmex2PK6dSJoNTSJUUswT651yww3Mg==
 
+lodash@^3.9.3:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
+  integrity sha512-9mDDwqVIma6OZX79ZlDACZl8sBm0TEnkf99zV3iMA4GzkIT/9hiqP5mY0HoT1iNLCrKc/R1HByV+yJfRWVJryQ==
+
 lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
@@ -1059,6 +1084,13 @@ mkdirp@^1.0.3:
   resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
+moment-timezone@^0.4.0:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.4.1.tgz#81f598c3ad5e22cdad796b67ecd8d88d0f5baa06"
+  integrity sha512-5cNPVUwaVJDCe9JM8m/qz17f9SkaI8rpnRUyDJi2K5HAd6EwhuQ3n5nLclZkNC/qJnomKgQH2TIu70Gy2dxFKA==
+  dependencies:
+    moment ">= 2.6.0"
+
 moment-timezone@^0.5.34:
   version "0.5.40"
   resolved "https://registry.npmjs.org/moment-timezone/-/moment-timezone-0.5.40.tgz"
@@ -1066,7 +1098,7 @@ moment-timezone@^0.5.34:
   dependencies:
     moment ">= 2.9.0"
 
-"moment@>= 2.9.0", moment@^2.29.1:
+"moment@>= 2.6.0", "moment@>= 2.9.0", moment@^2.29.1, moment@^2.9.0:
   version "2.29.4"
   resolved "https://registry.npmjs.org/moment/-/moment-2.29.4.tgz"
   integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
@@ -1140,6 +1172,11 @@ node-fetch@^2.6.7:
   integrity sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==
   dependencies:
     whatwg-url "^5.0.0"
+
+node-uuid@~1.4.1:
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/node-uuid/-/node-uuid-1.4.8.tgz#b040eb0923968afabf8d32fb1f17f1167fdab907"
+  integrity sha512-TkCET/3rr9mUuRp+CpO7qfgT++aAxfDRaalQhwPFzI9BY/2rCDn6OfpZOVggi1AXfTPpfkTrg5f5WQx5G1uLxA==
 
 node-windows@^1.0.0-beta.8:
   version "1.0.0-beta.8"
@@ -1444,6 +1481,24 @@ sequelize-cli@^6.5.2:
     umzug "^2.3.0"
     yargs "^16.2.0"
 
+sequelize-oracle@^3.3.2-0.0:
+  version "3.3.2-0.0"
+  resolved "https://registry.yarnpkg.com/sequelize-oracle/-/sequelize-oracle-3.3.2-0.0.tgz#a6ad680be28b19f08457f5f7a51de72a3a2a6e4a"
+  integrity sha512-t7yBXAYjqtIVlteIIc2l2v46nALBfdYS5NMyR4TowdPwDCnZuS0ZEtKLP6bWqvvLSYvI8kLAkydafreXyl7aVw==
+  dependencies:
+    bluebird "~2.9.24"
+    depd "^1.0.1"
+    dottie "^0.3.1"
+    generic-pool "2.2.0"
+    inflection "^1.6.0"
+    lodash "^3.9.3"
+    moment "^2.9.0"
+    moment-timezone "^0.4.0"
+    node-uuid "~1.4.1"
+    shimmer "1.0.0"
+    toposort-class "~0.3.0"
+    validator "^3.34.0"
+
 sequelize-pool@^7.1.0:
   version "7.1.0"
   resolved "https://registry.npmjs.org/sequelize-pool/-/sequelize-pool-7.1.0.tgz"
@@ -1490,6 +1545,11 @@ setprototypeof@1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz"
   integrity sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==
+
+shimmer@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/shimmer/-/shimmer-1.0.0.tgz#49c2d71c678360b802be18b278382d1cbb805c39"
+  integrity sha512-cObpDFWg7sBwR87R+Mg7umM/V8be9jjm9hSFRberxaxyWZ7Wqksmf1FPACuEKAO5XXeSuUr0DGD9PebmM6m8fA==
 
 side-channel@^1.0.4:
   version "1.0.4"
@@ -1619,6 +1679,11 @@ toposort-class@^1.0.1:
   resolved "https://registry.npmjs.org/toposort-class/-/toposort-class-1.0.1.tgz"
   integrity sha512-OsLcGGbYF3rMjPUf8oKktyvCiUxSbqMMS39m33MAjLTC1DVIH6x3WSt63/M77ihI09+Sdfk1AXvfhCEeUmC7mg==
 
+toposort-class@~0.3.0:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/toposort-class/-/toposort-class-0.3.1.tgz#d1333aed734f8608ced1286218bd2c45f60eff48"
+  integrity sha512-r8y3rqJ0FlmH+ZpXj3tKDw8fhLqRVH9rUFdal5p29Y/Xg50TM+PIkOPu2P/w/KxHViwfRQKvRdYg7G937TALkg==
+
 touch@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/touch/-/touch-3.1.0.tgz"
@@ -1700,6 +1765,11 @@ validator@^13.7.0:
   version "13.9.0"
   resolved "https://registry.npmjs.org/validator/-/validator-13.9.0.tgz"
   integrity sha512-B+dGG8U3fdtM0/aNK4/X8CXq/EcxU2WPrPEkJGslb47qyHsxmbggTWK0yEA4qnYVNF+nxNlN88o14hIcPmSIEA==
+
+validator@^3.34.0:
+  version "3.43.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-3.43.0.tgz#96464b992d4196833d97a194bf40b19ff54bae05"
+  integrity sha512-H9RMa5elH0361QGFKeZiIWxN0YJDKL9rblzaXVFEKrKkL9hROcg/4f5rJ90SLTjai0IPmN18v9LkH//wwN93bA==
 
 vary@^1, vary@~1.1.2:
   version "1.1.2"
