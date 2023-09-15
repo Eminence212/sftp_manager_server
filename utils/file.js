@@ -1,7 +1,7 @@
 const { downLoadCustomerFile } = require("./cronTasks");
 const path = require("path");
 const fs = require("fs");
-var parseString = require("xml2js").parseString;
+const parseString = require("xml2js").parseString;
 
 const readPayementFile = async (customer, file_name, directory) => {
   let resutat = [];

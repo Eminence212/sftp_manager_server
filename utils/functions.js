@@ -1,5 +1,5 @@
 const { networkInterfaces } = require("os");
-export const getIpiAdress = () => {
+const getIpiAdress = () => {
   const nets = networkInterfaces();
   const results = {};
 
@@ -15,4 +15,7 @@ export const getIpiAdress = () => {
     }
   }
   return results["Ethernet"][0];
+};
+module.exports = {
+  getIpiAdress,
 };
