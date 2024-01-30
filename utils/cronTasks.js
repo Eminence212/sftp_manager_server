@@ -268,6 +268,7 @@ const getCbsRemoteFiles = async (customer, directory, createdAt) => {
   return files[directory].filter((item) => isEqual(item.modifyTime, createdAt));
 };
 const getCbsRemoteAllFiles = async (customer, createdAt) => {
+
   // const { inbound_amp, outbound_amp, erreur_amp, archive_amp } = customer;
   const inbound_amp = customer?.inbound_amp,
     outbound_amp = customer?.outbound_amp,
