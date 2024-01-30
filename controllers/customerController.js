@@ -301,7 +301,6 @@ const userController = {
           ],
         },
       });
-
       if (cust) {
         res.json({
           sourceFiles: await getCustomerRemoteFiles(

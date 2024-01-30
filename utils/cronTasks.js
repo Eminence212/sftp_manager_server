@@ -262,7 +262,6 @@ const getCbsRemoteFiles = async (customer, directory, createdAt) => {
       err: await sftp.list(`${erreur_amp}`),
       arch: await sftp.list(`${archive_amp}`),
     };
-
     sftp.disconnect();
   }
 
