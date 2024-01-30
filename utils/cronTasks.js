@@ -203,7 +203,6 @@ const getCustomerRemoteFiles = async (customer, directory, createdAt) => {
     outbound = customer?.outbound,
     erreur = customer?.erreur,
     archive = customer?.archive;
-
   let files = {
     in: [],
     out: [],
@@ -222,10 +221,10 @@ const getCustomerRemoteFiles = async (customer, directory, createdAt) => {
   } else {
     files = {
       ...files,
-      in: await sftp.list(`.${inbound}`),
-      out: await sftp.list(`.${outbound}`),
-      err: await sftp.list(`.${erreur}`),
-      arch: await sftp.list(`.${archive}`),
+      in: await sftp.list(`${inbound}`),
+      out: await sftp.list(`${outbound}`),
+      err: await sftp.list(`${erreur}`),
+      arch: await sftp.list(`${archive}`),
     };
 
     sftp.disconnect();
@@ -545,7 +544,6 @@ const putRemoteFiles = async (customer) => {
           }
         }
       }
- 
 
       sftp.disconnect();
     }
@@ -725,16 +723,16 @@ const putCustomerRemoteFile = async (customer, file_name, directory) => {
   //   response_slug,
   //   files,
   // } = customer;
-   const host = customer?.host,
-     port = customer?.port,
-     username = customer?.username,
-     password = customer?.password,
-     inbound = customer?.inbound,
-     outbound = customer?.outbound,
-     erreur = customer?.erreur,
-     archive = customer?.archive,
-     response_slug = customer?.response_slug,
-     files = customer?.files;
+  const host = customer?.host,
+    port = customer?.port,
+    username = customer?.username,
+    password = customer?.password,
+    inbound = customer?.inbound,
+    outbound = customer?.outbound,
+    erreur = customer?.erreur,
+    archive = customer?.archive,
+    response_slug = customer?.response_slug,
+    files = customer?.files;
   //Connexion au server SFTP
   const sftp = new ClientSftp(host, port, username, password);
   const { state, msg } = await sftp.connect();

@@ -21,7 +21,7 @@ module.exports = class ClientSftp {
     } catch (err) {
       return {
         state: false,
-        msg: `Échec de la connexion sur ${this.host}:${this.port}:`,
+        msg: `Échec de la connexion sur ${this.host}:${this.port}`,
         err,
       };
     }

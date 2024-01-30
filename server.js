@@ -25,7 +25,7 @@ app.use("/api/v1/customer", require("./routes/customerRoute"));
 const PORT = process.env.PORT;
 app.listen(PORT, IP, () => {
   console.log(`Server listening on http://${IP}:${PORT}`);
-  require("events").defaultMaxListeners = 0;
-  // cron.schedule(`*/15 * * * *`, () => main()); //Chaque 15 minutes
-  cron.schedule(process.env.CRON_EXPRESSION, () => main()); //Every 30 seconds
+  // require("events").defaultMaxListeners = 0;
+  // // cron.schedule(`*/15 * * * *`, () => main()); //Chaque 15 minutes
+  // cron.schedule(process.env.CRON_EXPRESSION, () => main()); //Every 30 seconds
 });
