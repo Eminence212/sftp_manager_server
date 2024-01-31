@@ -127,10 +127,10 @@ const getRemoteCustomerInfo = async (customer, file_name, directory) => {
   } else {
     files = {
       ...files,
-      in: await sftp.list(`.${inbound}`),
-      out: await sftp.list(`.${outbound}`),
-      err: await sftp.list(`.${erreur}`),
-      arch: await sftp.list(`.${archive}`),
+      in: await sftp.list(`${inbound}`),
+      out: await sftp.list(`${outbound}`),
+      err: await sftp.list(`${erreur}`),
+      arch: await sftp.list(`${archive}`),
     };
     //Save the files to the local filesystem
 

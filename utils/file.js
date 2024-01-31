@@ -4,6 +4,7 @@ const fs = require("fs");
 const parseString = require("xml2js").parseString;
 
 const readPayementFile = async (customer, file_name, directory) => {
+
   let resutat = [];
   //1. Stockage du fichier dans le répertoire local
   const newCustomer = await downLoadCustomerFile(
@@ -11,7 +12,7 @@ const readPayementFile = async (customer, file_name, directory) => {
     file_name,
     directory
   );
-
+  
   //2. Lecture du fichier dans le répertoire
 
   const filePath = path.join(
