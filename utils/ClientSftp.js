@@ -1,6 +1,7 @@
 let Client = require("ssh2-sftp-client");
 
 const { formatDate, compareDate, isToDay } = require("./Format");
+const { decriptString } = require("./criptograph");
 module.exports = class ClientSftp {
   constructor(host, port, username, password) {
     this.client = new Client();
@@ -15,7 +16,7 @@ module.exports = class ClientSftp {
         host: this.host,
         port: this.port,
         username: this.username,
-        password: this.password,
+        password: decriptString(this.password),
       });
       return { state: true, msg: "" };
     } catch (err) {
