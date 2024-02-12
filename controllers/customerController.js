@@ -17,6 +17,7 @@ const {
 } = require("../utils/cronTasks");
 const { readPayementFile } = require("../utils/file");
 const { formaShorttDate } = require("../utils/Format");
+const { criptString, decriptString } = require("../utils/criptograph");
 
 const userController = {
   register: async (req, res) => {
@@ -203,9 +204,17 @@ const userController = {
             },
             { transaction: t }
           );
-          newCustomer = { ...newCustomer, userId: user.id };
+          newCustomer = {
+            ...newCustomer,
+            userId: user.id,
+            password: criptString(password),
+          };
         } else {
-          newCustomer = { ...newCustomer, userId: c_user.id };
+          newCustomer = {
+            ...newCustomer,
+            userId: c_user.id,
+            password: criptString(password),
+          };
         }
         //Création d'un client
         await Customer.create(newCustomer, { transaction: t });
@@ -270,6 +279,12 @@ const userController = {
         paranoid: false,
       });
       if (customer) {
+          const NewCustomersPasswordsDecript = customer.map((item) => {
+            return {
+              ...item.dataValues,
+              password: decriptString(item.dataValues.password),
+            };
+          });
         res.json(customer);
       } else {
         return res.status(404).json({ msg: "Non trouvé" });
@@ -349,7 +364,13 @@ const userController = {
         order: [["name", "ASC"]],
       });
       if (customers) {
-        res.json(customers);
+        const NewCustomersPasswordsDecript = customers.map((item) => {
+          return {
+            ...item.dataValues,
+            password: decriptString(item.dataValues.password),
+          };
+        });
+        res.json(NewCustomersPasswordsDecript);
       } else {
         return res.status(404).json({ msg: "Non trouvé" });
       }
@@ -428,7 +449,7 @@ const userController = {
             archive_amp,
             host,
             port,
-            password,
+            password: criptString(password),
             enable,
             autovalidation,
             response_slug,
